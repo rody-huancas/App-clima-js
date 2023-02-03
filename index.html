@@ -9,6 +9,56 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
+    <main class="clima">
+      <h1 class="clima__titulo" id="titulo">Buscar Clima</h1>
+      <!-- resultado -->
+      <div class="clima__top">
+        <div class="clima__contenedor">
+          <div class="clima__resultado">
+            <p class="clima__descripcion">
+              Ingresa la ciudad y selecciona el país para buscar el clima.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- fin resultado -->
+      <!-- formulario -->
+      <form id="formulario" class="clima__formulario">
+        <!-- ciudad -->
+        <div class="clima__grupo">
+          <input
+            type="text"
+            name="ciudad"
+            id="ciudad"
+            placeholder="Ingrese la ciudad"
+            class="clima__input"
+          />
+        </div>
+        <!-- fin ciudad -->
+        <!-- seleccionar país -->
+        <div class="clima__grupo">
+          <select id="pais" class="clima__select">
+            <option disabled selected value="">Seleccione el país</option>
+            <option value="PE">Perú</option>
+            <option value="BR">Brasil</option>
+            <option value="AR">Argentina</option>
+            <option value="UY">Uruguay</option>
+            <option value="CL">Chile</option>
+            <option value="BO">Bolivia</option>
+            <option value="CO">Colombia</option>
+            <option value="MX">México</option>
+            <option value="US">Estados Unidos</option>
+            <option value="ES">España</option>
+          </select>
+        </div>
+        <!-- fin seleccionar país -->
+        <!-- botón de enviar -->
+        <input type="submit" value="Buscar clima" class="clima__btn" />
+        <!-- fin botón enviar -->
+      </form>
+      <!-- fin formulario -->
+    </main>
+
     <!-- js -->
     <script src="assets/js/app.js"></script>
   </body>
